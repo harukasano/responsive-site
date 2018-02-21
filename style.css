@@ -15,14 +15,18 @@
 .box {
     background: #eee;
     float: left;
-    width: 27%;
-    padding: 20px;
+    width: 300px;
+    padding: 30px;
     margin: 20px;
 }
 .clearfix::after {
     clear: both;
     display: block;
     content: '';
+    }
+
+.content {
+    padding: 55px;
 }
 
 .title {
@@ -34,7 +38,7 @@
 
 .btn {
     display: inline-block;
-    width: 20%;
+    width: 150px;
     padding: 20px;
     background-color: green;
     color: white;
@@ -59,10 +63,13 @@ footer {
 
 /* モバイル対応ここから */
 @media(max-width: 768px){
+    .main-photo {
+        height: 250px;
+    }
     .box{
         display: flex;
         flex-direction: column;
         float: none;
-        width: 80%;
+        width: 200px;
     }
 }
